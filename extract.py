@@ -31,7 +31,7 @@ def extractImg(name,numImgs):
 		print " imLinesTuple";
 		print len(imLinesTuple);
 		imgList = []	
-		#Find the contours
+		#Find the contours in the given image
 		for imtup in imLinesTuple:
 			cntImg = imtup[0]*255;
 			cntImg = np.uint8(cntImg);
@@ -90,6 +90,4 @@ def getImageLinesTuple(fthresh, filename):
 
 	return imgListTuple;
 
-
-	
 
